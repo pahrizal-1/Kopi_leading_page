@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Minuman Kekinian</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="images/coffee-logo-png-7503.png" class="logo"></a>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Prodcuct</a></li>
+               <li><a href="#">Service</a></li>
+               <li><a href="#">About</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textbox">
+                <h2>Apakah Kalian <br><span>Suka Kopi !!</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ea eveniet corrupti repellendus inventore suscipit explicabo quam labore voluptate facere itaque iste dignissimos ullam molestiae commodi, porro rerum dolore nulla.</p>
+                <a href="#">Liat Semua Produk</a>
+            </div>
+            <div class="imgBDX">
+                <img src="images/kisspng-dunkin-donuts-coffee-and-doughnuts-iced-coffee-kr-donuts-5ac5eaeb513855.7412399015229201713327.png" class="kopi1">
+            </div>
+        </div>
+        <ul class="thumb">
+        <li><img src="images/kisspng-dunkin-donuts-coffee-and-doughnuts-iced-coffee-kr-donuts-5ac5eaeb513855.7412399015229201713327.png" onclick="imgSlider('images/kisspng-dunkin-donuts-coffee-and-doughnuts-iced-coffee-kr-donuts-5ac5eaeb513855.7412399015229201713327.png');
+            changeBgColor('#CEAEDA')" ></li>       
+        <li><img src="images/kisspng-coffee-milk-chocolate-milk-chocolate-cake-chocolate-milk-cap-5a999689969a59.7202901415200149856169.png" onclick="imgSlider('images/kisspng-coffee-milk-chocolate-milk-chocolate-cake-chocolate-milk-cap-5a999689969a59.7202901415200149856169.png');changeBgColor('#C0AFC6')" ></li>
+        <li><img src="images/kisspng-milkshake-smoothie-batida-egg-cream-hot-chocolate-hot-milk-tea-with-straw-5a9ea53307fb66.0177837215203464190327.png" onclick="imgSlider('images/kisspng-milkshake-smoothie-batida-egg-cream-hot-chocolate-hot-milk-tea-with-straw-5a9ea53307fb66.0177837215203464190327.png');changeBgColor('#89838E')" ></li>
+            </ul>
+            <ul class="sosialMedia">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li> 
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li> 
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li> 
+            </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.kopi1').src = anything;
+        }
+        function changeBgColor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+    
+</body>
+</html>
